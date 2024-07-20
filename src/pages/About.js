@@ -1,4 +1,7 @@
 import childPhoto from "../assets/images/Untitled.png";
+import childPhoto2 from "../assets/images/Frame 121.png";
+import childPhoto3 from "../assets/images/Frame 126.png";
+
 
 const About = () => {
   return (
@@ -49,7 +52,7 @@ const About = () => {
         <h1 className="text-3xl font-bold text-center">
           Empowering Early Literacy
         </h1>
-        <p className="mt-6 w-11/12 pl-48 text-lg">
+        <p className="mt-6 pl-20 text-lg">
           Let's Read takes young learners on an exciting journey from beginner
           to proficient readers through engaging games and playful activities.
           Our books and games are designed to boost confidence and self-esteem,
@@ -59,26 +62,97 @@ const About = () => {
           screens.
         </p>
       </div>
-      <div>
-        <div>
-          <h1>Why Let's Read?</h1>
-          <p>
+      <div className="flex mt-12 justify-between">
+        <div className="pt-12 w-6/12 ">
+          <h1 className="text-3xl font-bold pl-20  ">Why Let's Read</h1>
+          <p className="pl-20 pt-12">
             While many schools in India rely on foreign-designed reading
             programs, Let's Read stands out as a well-researched, culturally
             relevant program tailored specifically for the Indian context. With
             relatable words and pictures, we facilitate a smooth transition from
             the mother tongue to English, ensuring meaningful learning
-            experiences for all children. From low-income schools to affluent
-            communities, Let's Read has consistently delivered positive results.
-            Our structured approach has proven effective in teaching English to
-            non-native speakers, making literacy accessible to all. Through fun
-            activities, we address the challenges of the digital age, empowering
-            educators, parents, and caregivers to support early literacy
-            development. Our hands-on approach offers a balanced alternative to
-            digital learning, nurturing holistic growth in children.
+            experiences for all children.
+          </p>
+          <p className="pl-20 pt-12">
+            From low-income schools to affluent communities, Let's Read has
+            consistently delivered positive results. Our structured approach has
+            proven effective in teaching English to non-native speakers, making
+            literacy accessible to all.
+          </p>
+          <p className="pl-20 pt-12">
+            Through fun activities, we address the challenges of the digital
+            age, empowering educators, parents, and caregivers to support early
+            literacy development. Our hands-on approach offers a balanced
+            alternative to digital learning, nurturing holistic growth in
+            children.
           </p>
         </div>
+        <img
+          src={childPhoto2}
+          alt="logo"
+          className="w-5/12 h-[500px] pt-12 px-16 object-cover object-top overflow-hidden rounded-lg mb-4 "
+        />
       </div>
+
+      <div className="mt-16">
+        <h1 className="text-3xl font-bold pl-20">Salient Features</h1>
+        <div className="w-[230px] h-[2px] bg-black ml-20"></div>
+         <ul className="pr-6">
+          <li className="pl-20 pt-2 ">
+          Holistic Approach: Seamlessly integrates play-based reading,
+          interactive experiences, and captivating learning materials to
+          accommodate diverse learning preferences.
+          </li>
+          <li className="pl-20 pt-1">
+          Play Phonics: Develops
+          expertise in letter-sound relationships, decoding, and word
+          construction through an engaging kinesthetic phonics curriculum.
+          </li>
+          <li className="pl-20 pt-1 ">
+          Cognitive Stimulation: Activities and games foster higher-order
+          thinking skills, ensuring steady progress in reading proficiency.
+          </li>
+          <li className="pl-20 pt-1 ">
+          Preschool Literacy Audit: Assists schools in implementing effective
+          literacy strategies to boost literacy rates.
+          </li>
+          <li className="pl-20 pt-1 ">
+          Reading Age Tool: Tracks
+          each child's reading age, enabling schools to monitor and improve
+          literacy standards over time.
+          </li>
+          <li className="pl-20 pt-1 ">
+          Parental Engagement: Equips parents with
+          resources and guidance to actively participate in their child’s
+          literacy journey. Educator’s Companion: Provides pre-primary teachers
+          with comprehensive support for classroom differentiation and targeted
+          intervention.
+          </li>
+         </ul>
+      </div>
+        <div className="flex justify-between mt-2">
+           <img 
+            src={childPhoto3}
+           alt="logo"
+           className=""
+           />
+           <div>
+            <h1 className="text-3xl text-end font-bold pr-32">
+              Equity in Education
+            </h1>
+            {/* <div className="w-[230px] h-[2px] bg-black "></div> */}
+
+            <p className="w-10/12 text-end pt-8"> 
+            LET’S READ promotes equity in education by serving both low-income and affluent schools, with activities tailored to meet the diverse needs of all children. Our kinesthetic activities support the literacy learning of neurodivergent children, fostering self-correction and emotional development.
+            </p>
+            <h1  className="text-3xl text-end font-bold pr-32 pt-8">
+              Learning Through Fun and Friendship
+            </h1>
+            <p className="w-10/12 text-end pt-8">
+            Research shows that children are naturally drawn to reading when books reflect their lives and culture. Let's Read celebrates the joy of reading by offering stories and characters that resonate with young readers, fostering a lifelong love for learning and friendship.
+            </p>
+           </div>
+        </div>
     </div>
   );
 };
