@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <div>
         <div className="w-[1000px] h-[100px]  bg-red-600 rounded-[50px] absolute top-[500px] mx-36 flex items-center justify-between ">
-          <p className="py-4 px-12 w-9/12 text-[18px] font-jost">
+          <p className="py-4 px-12 w-9/12 text-[18px] font-jost text-white">
             In this digital age when children are inclined towards screens, our
             program gives the option of socializing and learning to read through
             play.

@@ -3,11 +3,10 @@ import{FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import{faInstagram, faFacebook, faXTwitter, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import{faPhone, faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
-
 const Footer = () => {
   return (
       <div>
-        <div className='w-screen h-[450px] bg-violet-800 flex   text-white'>
+        <div className='w-screen  h-[450px] bg-violet-800 flex  text-white rounded-t-md'>
            <div>
             <h1 className='text-3xl font-bold text-orange-600 mx-6 pt-10 w-10/12'>Let's Read</h1>
              <p className='px-6 pt-6'>Enroll Your Child in a Session Now.</p>
@@ -23,7 +22,7 @@ const Footer = () => {
            <div>
             <h1 className='text-xl font-bold mx-6 pt-10 '>Products</h1>
             <ul  className='px-6 pt-6 cursor-pointer'>
-              <li className='pt-6 w-8/12'>Let's Read Educator’s Handbook</li>
+              <li className='pt-6 w-10/12'>Let's Read Educator’s Handbook</li>
               <li className='pt-6'>Learner's Guide 1</li>
               <li className='pt-6'>Learner's Book 2</li>
               <li className='pt-6'>Learner's Guide 3</li>
