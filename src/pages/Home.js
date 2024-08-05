@@ -8,7 +8,7 @@ import LetsRead from '../Components/LetsRead'
 
 const Home = () => {
   return (
-    <div>
+    <div className='w-full flex flex-col justify-center m-0 p-0'>
       <HeroSection />
       <Programs/>
       <About />

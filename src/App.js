@@ -9,9 +9,11 @@ import PhoenicKit from "./pages/PhoenicKit";
 import Resources from "./pages/Resources";
 import FAQ from "./pages/FAQ";
 
+import './assets/styles/main.scss'
+
 const App = () => {
   return (
-    <div className="app">
+    <div className="app w-full overflow-hidden flex flex-col justify-center m-0 p-0">
       <Router>
         <Header />
         <Routes>
