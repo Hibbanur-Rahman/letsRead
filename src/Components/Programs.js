@@ -10,7 +10,7 @@ const Programs = () => {
         <h1 className="text-center mt-12 text-[3.2rem] leading-none font-bold m-0 p-0">Our Programs</h1>
         <div className="header-design w-full flex  justify-center flex-row m-0 p-0 relative">
           <div className="h-[3px] w-[300px] bg-pink  relative right-[-10px] top-[10px] "></div>
-          <img src={headerDesign} className="h-[50px] w-[50px]  relative "/>
+          <img src={headerDesign} className="h-[50px] w-[50px]  relative " alt=""/>
         </div>
         <p className="mt-12 text-center font-semibold text-4xl ">
           Your Ally for Early Academic Success

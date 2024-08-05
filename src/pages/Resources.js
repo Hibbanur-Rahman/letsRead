@@ -5,8 +5,8 @@ import Resources2 from "../assets/images/resources2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPersonDress,
-  faPeopleGroup,
-  faStreetView,
+  // faPeopleGroup,
+  // faStreetView,
 } from "@fortawesome/free-solid-svg-icons";
 import EllipseImg from "../assets/images/Ellipse 33.png";
 

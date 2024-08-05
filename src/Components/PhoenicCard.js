@@ -8,7 +8,7 @@ const PhoenicCard = () => {
         <div className='w-[400px] h-[300px] bg-pink rounded-3xl overflow-hidden '>
            <img 
             src={Rectangle18}
-             alt='image'
+             alt=''
            />
                 <NavLink to="/PhoenicKit" className="text-white flex mt-4 justify-center  hover:underline " >Level 0 Phonics Kit</NavLink>
         </div>

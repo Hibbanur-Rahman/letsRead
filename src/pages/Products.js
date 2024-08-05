@@ -1,6 +1,7 @@
 import React from "react";
 import products from "../assets/images/products.png";
 import ProductCard from "../Components/ProductCard";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
@@ -18,10 +19,10 @@ const Products = () => {
       />
       <div className="mt-24 mx-12">
         <div className="flex gap-4 font-bold">
-          <a href="#" className="text-pink underline">
+          <Link to="#" className="text-pink underline">
             All
-          </a>
-          <a href="#">Books</a>
+          </Link>
+          <Link to="#">Books</Link>
         </div>
          <div className="flex justify-between">
          <ProductCard />
