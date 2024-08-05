@@ -12,16 +12,16 @@ const Benefit = () =>{
              <p className="ml-10 mt-10  ">Unlock a treasure trove of advantages with Let's Read</p>
               <ul className="ml-10 mt-10 w-7/12 text-lg">
                 <li>
-                   <span className="text-pink-400">Promotes Hands-On Learning:</span> Engages young learners with tactile experiences that ignite curiosity and foster active participation.
+                   <span className="text-pink">Promotes Hands-On Learning:</span> Engages young learners with tactile experiences that ignite curiosity and foster active participation.
                 </li>
                 <li>
-                   <span className="text-pink-400">Enhances Phonics Skills:</span>  Provides a solid foundation for phonetic literacy, paving the way for confident and articulate communicators.
+                   <span className="text-pink">Enhances Phonics Skills:</span>  Provides a solid foundation for phonetic literacy, paving the way for confident and articulate communicators.
                 </li>
                 <li>
-                   <span className="text-pink-400"> Fosters Early Literacy:</span> Nurtures a love for language and literature from the very outset, laying the groundwork for a lifelong journey of learning and discovery.
+                   <span className="text-pink"> Fosters Early Literacy:</span> Nurtures a love for language and literature from the very outset, laying the groundwork for a lifelong journey of learning and discovery.
                 </li>
                 <li>
-                   <span className="text-pink-400"> Makes Learning Enjoyable for Kids:</span> Infuses the process of learning with joy, laughter, and boundless imagination, ensuring that each session is brimming with excitement and wonder.
+                   <span className="text-pink-"> Makes Learning Enjoyable for Kids:</span> Infuses the process of learning with joy, laughter, and boundless imagination, ensuring that each session is brimming with excitement and wonder.
                 </li>
               </ul>
               <button className='bg-pink px-4 py-2 ml-10  my-6 rounded-lg font-bold'>Contact Us</button>
