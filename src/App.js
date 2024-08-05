@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Footer from "./Components/Footer";
 import Programs from "./pages/Programs";
+import PhoenicKit from "./pages/PhoenicKit";
+import Resources from "./pages/Resources";
+import FAQ from "./pages/FAQ";
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/phoenicKit" element={<PhoenicKit />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
         <Footer />
       </Router>

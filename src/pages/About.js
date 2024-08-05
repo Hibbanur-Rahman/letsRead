@@ -7,13 +7,14 @@ const About = () => {
   return (
     <div>
       <div>
-        <div className="w-[1000px] h-[100px]  bg-red-600 rounded-[50px] absolute top-[500px] mx-36 flex items-center justify-between ">
+        <div className="w-[1000px] h-[100px]  bg-pink rounded-[50px] absolute top-[500px] mx-36 flex items-center justify-between ">
           <p className="py-4 px-12 w-9/12 text-[18px] font-jost text-white">
             In this digital age when children are inclined towards screens, our
             program gives the option of socializing and learning to read through
             play.
           </p>
-          <button className="bg-yellow-300 px-4 py-2 mr-10 rounded-lg font-bold">
+          <button 
+           className="bg-yellow px-4 py-2 mr-10 rounded-lg font-bold">
             About Us
           </button>
         </div>

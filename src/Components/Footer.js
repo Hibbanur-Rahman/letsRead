@@ -2,13 +2,18 @@ import React from 'react'
 import{FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import{faInstagram, faFacebook, faXTwitter, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import{faPhone, faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import LetsReadImg from "../assets/images/image 2.png";
 
 const Footer = () => {
   return (
       <div>
-        <div className='w-screen  h-[450px] bg-violet-800 flex  text-white rounded-t-md'>
+        <div className='w-screen  h-[450px] bg-lightPurple flex  text-white rounded-t-md'>
            <div>
-            <h1 className='text-3xl font-bold text-orange-600 mx-6 pt-10 w-10/12'>Let's Read</h1>
+           <img 
+              src={LetsReadImg}
+              alt='img'
+              className='w-[200px] h[40px] pt-10 px-6'
+             />
              <p className='px-6 pt-6'>Enroll Your Child in a Session Now.</p>
              <p className='px-6 pt-6 w-8/12'>Let's Read: Empowering young minds through literacy.</p>
              <div className='px-6 pt-6 flex gap-5'> 

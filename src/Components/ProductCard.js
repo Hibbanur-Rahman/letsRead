@@ -11,7 +11,7 @@ const ProductCard = () => {
                    alt='frame'
                    className='object-cover object-bottom'
                    />
-                   <div className='w-[250]px h-[350px] bg-purple-800 rounded-t-3xl relative top-[-20px] '>
+                   <div className='w-[250]px h-[350px] bg-darkPurple rounded-t-3xl relative top-[-20px] '>
                     <img
                      src={Vector}
                      alt='vector'
@@ -19,7 +19,7 @@ const ProductCard = () => {
                      />
                      <h1 className='mt-4 mx-2 text-white text-xl'>Let's Read Educator's Handbook</h1>
                      <p className='mt-4 mx-2 text-white w-10/12'>Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!</p>
-                     <button className="bg-yellow-300 px-8 py-2 mr-10 rounded-lg font-bold mt-3 ml-12">
+                     <button className="bg-yellow px-8 py-2 mr-10 rounded-lg font-bold mt-3 ml-12">
                          Shop Now
                         </button>
                    </div>
