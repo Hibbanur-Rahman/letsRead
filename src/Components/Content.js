@@ -12,16 +12,16 @@ const Content = () =>{
              <p className="ml-10 mt-10  ">Dive into a world of discovery with Let's Read, where every kit is brimming with:</p>
               <ul className="ml-10 mt-10 w-7/12 text-lg">
                 <li>
-                   <span className="text-pink-400">Activity Cards:</span>Engaging prompts and challenges that spark creativity and imagination.
+                   <span className="text-pink">Activity Cards:</span>Engaging prompts and challenges that spark creativity and imagination.
                 </li>
                 <li>
-                   <span className="text-pink-400">Tracing Sheets: </span>Precision-crafted worksheets that enhance fine motor skills and reinforce letter formation.
+                   <span className="text-pink-">Tracing Sheets: </span>Precision-crafted worksheets that enhance fine motor skills and reinforce letter formation.
                 </li>
                 <li>
-                   <span className="text-pink-400"> Pegs: </span>Interactive tools that add an extra layer of excitement to learning, turning every activity into an adventure.
+                   <span className="text-pink"> Pegs: </span>Interactive tools that add an extra layer of excitement to learning, turning every activity into an adventure.
                 </li>
                 <li>
-                   <span className="text-pink-400"> And More:</span> Unlock a treasure trove of surprises and delights as you explore the rich tapestry of activities within Let's Read, designed to inspire, engage, and empower young learners on their phonics journey.
+                   <span className="text-pink"> And More:</span> Unlock a treasure trove of surprises and delights as you explore the rich tapestry of activities within Let's Read, designed to inspire, engage, and empower young learners on their phonics journey.
                 </li>
               </ul>
               <button className='bg-pink px-4 py-2 ml-10  my-6 rounded-lg font-bold'>Contact Us</button>
