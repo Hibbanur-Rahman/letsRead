@@ -23,6 +23,7 @@ const HeroSection = () => {
           Reading kits offer families with young children the tools and
           information to help inspire a. passion for reading in their homes.
         </p>
+        <pre>555+ Schools  >> 500+ Teachers  >> 5000+ Childrens </pre>
         <button
           onClick={toggleModal}
           className="bg-yellow px-4 py-2 mt-4  rounded-lg font-bold"
