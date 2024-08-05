@@ -24,7 +24,7 @@ const Benefit = () =>{
                    <span className="text-pink-400"> Makes Learning Enjoyable for Kids:</span> Infuses the process of learning with joy, laughter, and boundless imagination, ensuring that each session is brimming with excitement and wonder.
                 </li>
               </ul>
-              <button className='bg-pink-300 px-4 py-2 ml-10  my-6 rounded-lg font-bold'>Contact Us</button>
+              <button className='bg-pink px-4 py-2 ml-10  my-6 rounded-lg font-bold'>Contact Us</button>
                
            </div>
            <img 

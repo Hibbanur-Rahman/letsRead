@@ -24,7 +24,7 @@ const Content = () =>{
                    <span className="text-pink-400"> And More:</span> Unlock a treasure trove of surprises and delights as you explore the rich tapestry of activities within Let's Read, designed to inspire, engage, and empower young learners on their phonics journey.
                 </li>
               </ul>
-              <button className='bg-pink-300 px-4 py-2 ml-10  my-6 rounded-lg font-bold'>Contact Us</button>
+              <button className='bg-pink px-4 py-2 ml-10  my-6 rounded-lg font-bold'>Contact Us</button>
                
            </div>
            <img 
