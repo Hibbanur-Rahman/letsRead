@@ -10,7 +10,7 @@ const ProgramCard = () => {
             Level 0 Phoenic Kit
           </h1>
         </div>
-        <img src={ProgImg} alt="image-prog" className="mt-1 " />
+        <img src={ProgImg} alt="image-prog" className="mt-1 w-full" />
         <p className="mx-2 mt-4">
           Introduce your child to the world of phonics with our Level 0 Phonics
           Kit. Packed with engaging activities, it's the perfect start to their

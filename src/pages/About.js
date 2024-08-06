@@ -1,4 +1,4 @@
-import childPhoto from "../assets/images/Untitled.png";
+import childPhoto from "../assets/images/about-img.png";
 import childPhoto2 from "../assets/images/Frame 121.png";
 import childPhoto3 from "../assets/images/Frame 126.png";
 
