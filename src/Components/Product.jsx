@@ -11,6 +11,8 @@ import productCardIcon2 from '../assets/images/product-card-icon-2.svg'
 import productCardIcon3 from '../assets/images/product-card-icon-3.svg'
 import productCardIcon4 from '../assets/images/product-card-icon-4.svg'
 
+import productSideDesign from '../assets/images/products-side-bottom-design.svg'
+
 const Product = () => {
   return (
     <div className="w-full flex items-center justify-center flex-col">
@@ -30,7 +32,11 @@ const Product = () => {
         Explore our wide range of products designed to meet your needs. Find the
         perfect solution for you with just a few clicks.
       </p>
-      <div className="flex justify-center align-center gap-[15px] w-10/12 mt-10">
+     
+      <div className="flex justify-center align-center gap-[15px] w-10/12 mt-10 relative">
+      <div className="absolute right-[-130px] top-[-100px] rotate-180 -z-10">
+        <img src={productSideDesign} alt="" className="w-full h-full" />
+      </div>
         <ProductCard
           image={productImg1}
           heading="Let's Read Educator's Handbook"
@@ -58,6 +64,9 @@ const Product = () => {
           icon={productCardIcon4}
 
         />
+      </div>
+      <div className="relative left-[-49%] top-[-130px] -z-10">
+        <img src={productSideDesign} alt="" className="w-full h-full" />
       </div>
     </div>
   );
