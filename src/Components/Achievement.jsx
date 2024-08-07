@@ -7,7 +7,7 @@ import AchievementCardIcon2 from '../assets/images/achievement-card-icon-2.svg'
 import AchievementCardIcon3 from '../assets/images/achievement-card-icon-3.svg'
 const Achievement = () => {
   return (
-    <div className='w-full flex flex-col items-center justify-center m-0 p-0'>
+    <div className='w-full flex flex-col items-center justify-center m-0 p-0 mt-16'>
        <h1 className="text-center text-4xl md:text-5xl font-bold leading-none m-0 p-0">
           Our Achievements
         </h1>

@@ -15,7 +15,7 @@ import productSideDesign from '../assets/images/products-side-bottom-design.svg'
 
 const Product = () => {
   return (
-    <div className="w-full flex items-center justify-center flex-col">
+    <div className="w-full flex items-center justify-center flex-col relative">
       <h1 className="text-center text-4xl md:text-5xl font-bold leading-none m-0 p-0">
         Our Products
       </h1>
@@ -65,7 +65,7 @@ const Product = () => {
 
         />
       </div>
-      <div className="relative left-[-49%] top-[-130px] -z-10">
+      <div className="absolute left-[-30px] bottom-[-70px] h-[200px] w-[200px] -z-10">
         <img src={productSideDesign} alt="" className="w-full h-full" />
       </div>
     </div>

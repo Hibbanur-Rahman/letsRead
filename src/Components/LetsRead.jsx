@@ -11,7 +11,7 @@ import yellowStar from "../assets/images/yellow-star.svg";
 import purpleStar from "../assets/images/purple-star.svg";
 const LetsRead = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-16 relative">
+    <div className="w-full flex flex-col items-center justify-center mt-32 relative">
       <h1 className="text-center text-3xl font-semiBold text-black">
         The{" "}
         <span className="text-darkPurple underline font-bold">LETS READ</span>{" "}
