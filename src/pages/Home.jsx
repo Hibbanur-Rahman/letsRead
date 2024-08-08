@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSection from "../Components/HeroSection";
 import About from "../Components/About";
 import Programs from "../Components/Programs";
@@ -21,7 +21,20 @@ import yellowStar from "../assets/images/yellow-star.svg";
 // import purpleStar from "../assets/images/purple-star.svg";
 import redStar from "../assets/images/red-star.svg";
 
+import frequentlyAskedImg from "../assets/images/frequently-asked-question-img.png";
+
+import productSideDesign from "../assets/images/products-side-bottom-design.svg";
+
+import contactUsImg from "../assets/images/contact-us-img.svg";
+
 const Home = () => {
+  const [isFaqShow1, setIsFaqShow1] = useState(false);
+  const [isFaqShow2, setIsFaqShow2] = useState(false);
+  const [isFaqShow3, setIsFaqShow3] = useState(false);
+  const [isFaqShow4, setIsFaqShow4] = useState(false);
+  const [isFaqShow5, setIsFaqShow5] = useState(false);
+  const [isFaqShow6, setIsFaqShow6] = useState(false);
+
   return (
     <div className="w-full flex flex-col justify-center m-0 p-0">
       <HeroSection />
@@ -218,7 +231,216 @@ const Home = () => {
           />
         </div>
 
-        <p className="">Get Answers to Your Common Queries. How does Le</p>
+        <p className="text-xl">
+          Get Answers to Your Common Queries. How does Le
+        </p>
+        <div className="w-11/12 flex justify-between relative mt-16">
+          <div className="absolute left-[-70px] top-[-70px] h-[200px] w-[200px] -z-10">
+            <img src={productSideDesign} alt="" className="w-full h-full" />
+          </div>
+          <div className="w-4/12 p-8">
+            <img
+              src={frequentlyAskedImg}
+              alt=""
+              className="rounded-3xl h-[600px] w-full"
+            />
+          </div>
+          <div className="w-7/12">
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
+                  isFaqShow1
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                }`}
+                onClick={() => setIsFaqShow1(!isFaqShow1)}
+              >
+                <p className="text-xl">
+                  1. How does Let&apos;s Read teach reading skills?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
+                  isFaqShow1 ? "flex" : "hidden"
+                }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Let&apos;s Read adopts a holistic method, integrating engaging
+                  materials and interactive activities for a comprehensive
+                  learning experience.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
+                  isFaqShow2
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                }`}
+                onClick={() => setIsFaqShow2(!isFaqShow2)}
+              >
+                <p className="text-xl">
+                  2. How Can I track my child&apos;s progress with Let&apos;s
+                  Read?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
+                  isFaqShow2 ? "flex" : "hidden"
+                }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Let&apos;s Read adopts a holistic method, integrating engaging
+                  materials and interactive activities for a comprehensive
+                  learning experience.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
+                  isFaqShow3
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                }`}
+                onClick={() => setIsFaqShow3(!isFaqShow3)}
+              >
+                <p className="text-xl">
+                  3. Is Let&apos;s Read suitable for children of all ages?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
+                  isFaqShow3 ? "flex" : "hidden"
+                }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Let&apos;s Read adopts a holistic method, integrating engaging
+                  materials and interactive activities for a comprehensive
+                  learning experience.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
+                  isFaqShow4
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                }`}
+                onClick={() => setIsFaqShow4(!isFaqShow4)}
+              >
+                <p className="text-xl">
+                  4. How Can I get started with Let&apos;s Read at home?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
+                  isFaqShow4 ? "flex" : "hidden"
+                }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Let&apos;s Read adopts a holistic method, integrating engaging
+                  materials and interactive activities for a comprehensive
+                  learning experience.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
+                  isFaqShow5
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                }`}
+                onClick={() => setIsFaqShow5(!isFaqShow5)}
+              >
+                <p className="text-xl">
+                  15 HAre there any teacher training resources available?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
+                  isFaqShow5 ? "flex" : "hidden"
+                }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Let&apos;s Read adopts a holistic method, integrating engaging
+                  materials and interactive activities for a comprehensive
+                  learning experience.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
+                  isFaqShow6
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                }`}
+                onClick={() => setIsFaqShow6(!isFaqShow6)}
+              >
+                <p className="text-xl">
+                  6.Is Let&apos;s Read suitable for non-English setting?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
+                  isFaqShow6 ? "flex" : "hidden"
+                }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Let&apos;s Read adopts a holistic method, integrating engaging
+                  materials and interactive activities for a comprehensive
+                  learning experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/**========= Contact Us =============== */}
+      <div
+        className="w-full flex items-center justify-center p-16 relative mb-20"
+        style={{ background: "linear-gradient(45deg, #FE2260,#981439)" }}
+      >
+         <div className="absolute top-[-50px] right-[-50px] h-[150px] w-[150px]">
+          <img src={yellowStar} alt="star" className="h-full w-full" />
+        </div>
+        <img
+          src={contactUsImg}
+          alt=""
+          className="h-[300px] w-[300px] rounded-full"
+        />
+        <div className="w-auto flex flex-col items-start  justify-center p-8">
+          <h2 className="text-2xl font-bold text-white">
+            Tell us About Your Programs,
+            <br /> We are Ready to Solve
+          </h2>
+          <button
+            className="rounded-xl py-1 px-8 font-bold text-xl mt-8"
+            style={{ background: "linear-gradient(#FFE259,#FFA751)" }}
+          >
+            Contact US
+          </button>
+        </div>
+        <div className="absolute bottom-[-70px] left-[-70px] h-[150px] w-[150px]">
+          <img src={redStar} alt="star" className="h-full w-full" />
+        </div>
       </div>
     </div>
   );
