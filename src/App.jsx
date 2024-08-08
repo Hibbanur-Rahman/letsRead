@@ -13,7 +13,7 @@ import './assets/styles/main.scss'
 
 const App = () => {
   return (
-    <div className="app w-full overflow-hidden flex flex-col justify-center m-0 p-0">
+    <div className="app w-full overflow-hidden flex flex-col justify-center m-0 p-0 relative">
       <Router>
         <Header />
         <Routes>

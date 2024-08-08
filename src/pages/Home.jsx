@@ -36,7 +36,7 @@ const Home = () => {
   const [isFaqShow6, setIsFaqShow6] = useState(false);
 
   return (
-    <div className="w-full flex flex-col justify-center m-0 p-0">
+    <div className="w-full flex flex-col justify-center m-0 p-0 ">
       <HeroSection />
       <Programs />
       <About />
