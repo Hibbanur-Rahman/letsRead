@@ -18,7 +18,7 @@ const Header = () => {
                 <NavLink to="/programs" className="text-lg font-bold">Programs</NavLink>
                 <NavLink to="/resources" className="text-lg font-bold">Resources</NavLink>
                 <NavLink to="/faq" className="text-lg font-bold">FAQ</NavLink>
-                <button className='bg-yellow px-4 py-2 ml-12  mx-6 rounded-lg font-bold'>Enquire Now</button>
+                <button className=' px-4 py-2 ml-12  mx-6 rounded-lg font-bold' style={{background:'linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)'}}>Enquire Now</button>
             </nav>
             </div> 
         </nav>

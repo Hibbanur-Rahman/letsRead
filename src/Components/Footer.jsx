@@ -122,14 +122,17 @@ const Footer = () => {
         <img src={productSideDesign} alt="" className="w-full h-full" />
       </div>
       <div
-        className="w-screen h-[50px] "
+        className="w-full flex justify-between h-[50px] items-center "
         style={{
           background:
             "linear-gradient(90deg, rgba(147,22,182,1) 0%, rgba(65,10,80,1) 100%)",
         }}
       >
-        <p className="text-white px-6 pt-2">
-          All Right Reserved @LetsReadIndia
+        <p className="text-white px-6 ">
+        © 2024 . All Right Reserved to <span className="underline">Let&apos;s Read</span>
+        </p>
+        <p className="text-white px-6  underline">
+         Privacy Policy
         </p>
       </div>
     </div>

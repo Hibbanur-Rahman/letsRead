@@ -27,12 +27,12 @@ const About = () => {
         </div>
 
         <div className="pt-20 ps-8 pe-0 w-6/12 ">
-          <h3 className="text-2xl w-8/12 font-bold  ">
+          <h3 className="text-2xl w-11/12 font-bold  ">
             In this digital age when children are inclined towards screens, our
             program gives the option of socializing and learning to read through
             play.
           </h3>
-          <p className="pt-4 w-8/12 text-xl">
+          <p className="pt-4 w-11/12 text-xl">
             Let&apos;s Read takes young learners on an exciting journey from
             beginner to proficient readers through engaging games and playful
             activities. Our books and games are designed to boost confidence and
