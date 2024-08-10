@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import FaqImg from "../assets/images/faq.png";
+import React, { useState } from "react";
+import FaqBanner from "../assets/images/faq-banner.jpg";
 // import FaqImg2 from "../assets/images/faq2.png";
 // import AccordionUse from "../Components/AccordianUsage";
 
@@ -17,28 +17,30 @@ const FAQ = () => {
   const [isFaqShow5, setIsFaqShow5] = useState(false);
   const [isFaqShow6, setIsFaqShow6] = useState(false);
   return (
-    <div>
-      <div>
-        <div className="w-[1000px] h-[100px]  bg-pink rounded-[50px] absolute top-[500px] mx-36  ">
-          <div className="p-4">
-            <h1 className="text-center text-white text-xl font-bold">
-              Frequently Asked Question{" "}
-            </h1>
-            <p className="text-center text-gray-800 font-bold">
-              Fostering a lifelong passion for reading in young minds through
-              our comprehensive Foundation Program.
-            </p>
-          </div>
+    <div className="w-full flex items-center justify-center flex-col">
+      <div className="banner w-full flex items-center justify-center">
+        <img
+          src={FaqBanner}
+          alt="products-photo"
+          className="w-screen h-[479px] object-cover object-center overflow-hidden"
+        />
+        <div className="absolute bg-white flex items-center justify-center px-16 py-3">
+          <h5 className="text-3xl font-bold text-center">FAQ</h5>
         </div>
-        <img src={FaqImg} alt="faq" />
       </div>
-      {/* <div className="mt-24 mb-24 flex gap-[60px]">
-        <img src={FaqImg2} alt="img" className="h-[460px] w-[400px]" />
-        <AccordionUse />
-      </div> */}
+      <div
+        className="w-8/12 rounded-3xl py-6 px-6 flex items-center flex-col justify-center relative top-[-50px] bg-[#FFD600] shadow-lg"
+       
+      >
+        <h1 className="text-center text-black text-4xl font-semibold">
+          Frequently Asked Question{" "}
+        </h1>
+        <p className="text-center text-xl text-gray ">
+        Get Answers to Your Common Queries.How does Le.
+        </p>
+      </div>
 
       <div className="w-full flex flex-col items-center justify-center mt-16 relative">
-
         <div className="w-11/12 flex justify-between relative mt-16">
           <div className="absolute left-[-70px] top-[-70px] h-[200px] w-[200px] -z-10">
             <img src={productSideDesign} alt="" className="w-full h-full" />
@@ -220,7 +222,6 @@ const FAQ = () => {
           <img src={yellowStar} alt="star" className="h-full w-full" />
         </div>
       </div>
-      
     </div>
   );
 };

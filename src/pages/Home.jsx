@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import HeroSection from "../Components/HeroSection";
 import About from "../Components/About";
 import Programs from "../Components/Programs";
@@ -34,6 +35,8 @@ const Home = () => {
   const [isFaqShow4, setIsFaqShow4] = useState(false);
   const [isFaqShow5, setIsFaqShow5] = useState(false);
   const [isFaqShow6, setIsFaqShow6] = useState(false);
+
+  const navigate=useNavigate();
 
   return (
     <div className="w-full flex flex-col justify-center m-0 p-0 ">
@@ -431,10 +434,13 @@ const Home = () => {
             Tell us About Your Programs,
             <br /> We are Ready to Solve
           </h2>
+
           <button
-            className="rounded-xl py-1 px-8 font-bold text-xl mt-8"
+            className="rounded-xl py-1 px-8 font-bold text-xl mt-8 cursor-pointer"
             style={{ background: "linear-gradient(#FFE259,#FFA751)" }}
+            onClick={()=>navigate('/contact')}
           >
+            
             Contact US
           </button>
         </div>

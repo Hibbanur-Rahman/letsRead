@@ -14,7 +14,7 @@ const About = () => {
           className="w-screen h-[479px] object-cover object-center overflow-hidden"
         />
         <div
-          className="w-8/12 rounded-3xl py-4 px-6 flex items-center justify-between relative top-[-50px]"
+          className="w-8/12 rounded-3xl py-4 px-6 flex items-center justify-between relative top-[-50px] shadow-lg"
           style={{
             background:
               "linear-gradient(60deg, rgba(236,0,140,1) 0%, rgba(255,126,126,1) 100%)",

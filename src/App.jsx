@@ -8,6 +8,7 @@ import Programs from "./pages/Programs";
 import PhoenicKit from "./pages/PhoenicKit";
 import Resources from "./pages/Resources";
 import FAQ from "./pages/FAQ";
+import Contact from "./pages/contact";
 
 import './assets/styles/main.scss'
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/phoenicKit" element={<PhoenicKit />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
         <Footer />
       </Router>
