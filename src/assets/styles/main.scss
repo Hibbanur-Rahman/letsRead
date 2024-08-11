@@ -2,3 +2,8 @@
 body{
     font-family: 'jost';
 }
+
+.input-group:focus-within {
+    background-color: #7E57C2;
+    border-color: #7E57C2 !important;
+  }
