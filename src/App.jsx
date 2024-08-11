@@ -11,6 +11,7 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/contact";
 
 import './assets/styles/main.scss'
+import ProductView from "./pages/productView";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/resources" element={<Resources />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/productView' element={<ProductView/>}/>
         </Routes>
         <Footer />
       </Router>

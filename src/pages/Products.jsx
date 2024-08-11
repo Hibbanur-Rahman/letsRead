@@ -57,17 +57,18 @@ const Products = () => {
             heading="Let's Read Educator's Handbook"
             desc="Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!"
             icon={productCardIcon1}
+
           />
           <ProductCard
             image={productImg2}
-            heading="Learner’s Guide 1"
+            heading="Learner&apos;s Guide 1"
             desc="Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!"
             icon={productCardIcon2}
           />
           <ProductCard
             image={productImg3}
-            heading="Learner’s Book 2: A Vibrant Journey into Phonics Sounds for Young Minds"
-            desc="Learner’s book 2 provides invaluable guidance in teaching phonics skills to young learners."
+            heading="Learner&apos;s Book 2: A Vibrant Journey into Phonics Sounds for Young Minds"
+            desc="Learner&apos;s book 2 provides invaluable guidance in teaching phonics skills to young learners."
             icon={productCardIcon3}
           />
           <ProductCard
