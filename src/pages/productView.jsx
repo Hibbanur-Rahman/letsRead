@@ -110,42 +110,49 @@ const ProductView = () => {
                 <img
                   src={productSliderImg1}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={productSliderImg2}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={productSliderImg3}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={productSliderImg4}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={productViewImg1}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={productViewImg2}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src={productViewImg3}
                   className="h-[400px] rounded-2xl w-full"
+                  alt=''
                 />
               </SwiperSlide>
             </Swiper>
@@ -176,25 +183,25 @@ const ProductView = () => {
               className="mySwiper "
             >
               <SwiperSlide>
-                <img src={productSliderImg1} className="rounded-xl" />
+                <img src={productSliderImg1} className="rounded-xl" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={productSliderImg2} className="rounded-xl" />
+                <img src={productSliderImg2} className="rounded-xl" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={productSliderImg3} className="rounded-xl" />
+                <img src={productSliderImg3} className="rounded-xl" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={productSliderImg4} className="rounded-xl" />
+                <img src={productSliderImg4} className="rounded-xl" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={productViewImg1} className="rounded-xl" />
+                <img src={productViewImg1} className="rounded-xl" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={productViewImg2} className="rounded-xl" />
+                <img src={productViewImg2} className="rounded-xl" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={productViewImg3} className="rounded-xl" />
+                <img src={productViewImg3} className="rounded-xl" alt="" />
               </SwiperSlide>
             </Swiper>
           </div>

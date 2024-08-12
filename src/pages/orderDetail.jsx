@@ -196,42 +196,49 @@ const OrderDetail = () => {
                   <img
                     src={productSliderImg1}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src={productSliderImg2}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src={productSliderImg3}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src={productSliderImg4}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src={productViewImg1}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src={productViewImg2}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src={productViewImg3}
                     className="h-[400px] rounded-2xl w-full"
+                    alt=""
                   />
                 </SwiperSlide>
               </Swiper>
@@ -262,25 +269,25 @@ const OrderDetail = () => {
                 className="mySwiper "
               >
                 <SwiperSlide>
-                  <img src={productSliderImg1} className="rounded-xl" />
+                  <img src={productSliderImg1} className="rounded-xl" alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={productSliderImg2} className="rounded-xl" />
+                  <img src={productSliderImg2} className="rounded-xl" alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={productSliderImg3} className="rounded-xl" />
+                  <img src={productSliderImg3} className="rounded-xl" alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={productSliderImg4} className="rounded-xl" />
+                  <img src={productSliderImg4} className="rounded-xl" alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={productViewImg1} className="rounded-xl" />
+                  <img src={productViewImg1} className="rounded-xl" alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={productViewImg2} className="rounded-xl" />
+                  <img src={productViewImg2} className="rounded-xl" alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={productViewImg3} className="rounded-xl" />
+                  <img src={productViewImg3} className="rounded-xl" alt='' />
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -465,14 +472,16 @@ const OrderDetail = () => {
               Facing any problem? Kindly connect on
             </p>
             <div className="">
-                <div className="flex gap-[20px] mb-3">
-                    <i className="bi bi-telephone text-xl font-bold"></i>
-                    <p className="text-lg font-bold underline">+91 62 6204 6204</p>
-                </div>
-                <div className="flex gap-[20px] mb-3">
-                    <i className="bi bi-envelope text-xl font-bold"></i>
-                    <p className="text-lg font-bold underline">support@classmonitor.com</p>
-                </div>
+              <div className="flex gap-[20px] mb-3">
+                <i className="bi bi-telephone text-xl font-bold"></i>
+                <p className="text-lg font-bold underline">+91 62 6204 6204</p>
+              </div>
+              <div className="flex gap-[20px] mb-3">
+                <i className="bi bi-envelope text-xl font-bold"></i>
+                <p className="text-lg font-bold underline">
+                  support@classmonitor.com
+                </p>
+              </div>
             </div>
           </div>
         </div>
