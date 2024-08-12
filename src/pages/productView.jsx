@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ProductViewBanner from "../assets/images/product-view-banner.jpg";
 import plusIcon from "../assets/images/plus-icon.svg";
 import minusIcon from "../assets/images/minus-icon.svg";
@@ -6,6 +7,11 @@ import minusIcon from "../assets/images/minus-icon.svg";
 import productViewImg1 from "../assets/images/product-view-img-1.jpg";
 import productViewImg2 from "../assets/images/product-view-img-2.jpg";
 import productViewImg3 from "../assets/images/product-view-img-3.jpg";
+
+import productSliderImg1 from "../assets/images/product-img-1.png";
+import productSliderImg2 from "../assets/images/product-img-2.png";
+import productSliderImg3 from "../assets/images/product-img-3.png";
+import productSliderImg4 from "../assets/images/product-img-4.png";
 
 import profileImg1 from "../assets/images/profile-img-1.jpg";
 // Import Swiper React components
@@ -19,6 +25,7 @@ import "swiper/css/thumbs";
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 const ProductView = () => {
+  const navigate=useNavigate();
   const [count, setCount] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -81,7 +88,7 @@ const ProductView = () => {
               />
             </div>
           </div>
-          <button className="text-2xl text-white font-bold rounded-lg bg-pink py-2 mt-8">
+          <button className="text-2xl text-white font-bold rounded-lg bg-pink py-2 mt-8" onClick={()=>navigate('/order')}>
             Buy Now
           </button>
         </div>
@@ -101,61 +108,43 @@ const ProductView = () => {
             >
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-1.jpg"
+                  src={productSliderImg1}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-2.jpg"
+                  src={productSliderImg2}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-3.jpg"
+                  src={productSliderImg3}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-4.jpg"
+                  src={productSliderImg4}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-5.jpg"
+                  src={productViewImg1}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-6.jpg"
+                  src={productViewImg2}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="https://swiperjs.com/demos/images/nature-7.jpg"
-                  className="h-[400px] rounded-2xl w-full"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-8.jpg"
-                  className="h-[400px] rounded-2xl w-full"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-9.jpg"
-                  className="h-[400px] rounded-2xl w-full"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-10.jpg"
+                  src={productViewImg3}
                   className="h-[400px] rounded-2xl w-full"
                 />
               </SwiperSlide>
@@ -187,64 +176,25 @@ const ProductView = () => {
               className="mySwiper "
             >
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-1.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productSliderImg1} className="rounded-xl" />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-2.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productSliderImg2} className="rounded-xl" />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-3.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productSliderImg3} className="rounded-xl" />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-4.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productSliderImg4} className="rounded-xl" />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-5.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productViewImg1} className="rounded-xl" />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-6.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productViewImg2} className="rounded-xl" />
               </SwiperSlide>
               <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-7.jpg"
-                  className="rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-8.jpg"
-                  className="rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-9.jpg"
-                  className="rounded-xl"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://swiperjs.com/demos/images/nature-10.jpg"
-                  className="rounded-xl"
-                />
+                <img src={productViewImg3} className="rounded-xl" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -252,7 +202,7 @@ const ProductView = () => {
       </div>
 
       <div className="w-11/12 rounded-3xl mt-8 overflow-hidden">
-        <div className="bg-darkPurple w-full rounded-3xl flex justify-center rounded-b-none p-2">
+        <div className="bg-darkPurple w-full rounded-3xl flex justify-center rounded-b-none p-2 py-4">
           <div className="w-10/12 flex justify-between ">
             <p className="underline text-xl font-bold text-yellow cursor-pointer">
               About Product
@@ -417,7 +367,7 @@ const ProductView = () => {
       </div>
 
       <div className="w-11/12 mt-16 flex flex-col items-center">
-        <div className="w-11/12">
+        <div className="w-11/12 overflow-hidden">
           <p className="text-[#551F64] text-xl font-bold">All Posted Images</p>
           <div className="flex gap-[15px] mt-4">
             <img

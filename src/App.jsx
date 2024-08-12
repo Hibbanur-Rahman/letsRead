@@ -10,8 +10,9 @@ import Resources from "./pages/Resources";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/contact";
 
-import './assets/styles/main.scss'
 import ProductView from "./pages/productView";
+import OrderDetail from "./pages/orderDetail";
+import './assets/styles/main.scss'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/productView' element={<ProductView/>}/>
+          <Route path='/order' element={<OrderDetail/>}/>
         </Routes>
         <Footer />
       </Router>
