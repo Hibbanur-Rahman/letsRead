@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import productBanner from "../assets/images/product-banner.jpg";
 import ProductCard from "../Components/ProductCard";
 import { Link } from "react-router-dom";
@@ -16,6 +16,10 @@ import productCardIcon4 from "../assets/images/product-card-icon-4.svg";
 import productSideDesign from "../assets/images/products-side-bottom-design.svg";
 
 const Products = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <div className="w-full flex flex-col items-center relative">
       <div className="banner w-full flex items-center justify-center">

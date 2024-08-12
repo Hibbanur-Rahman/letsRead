@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProductViewBanner from "../assets/images/product-view-banner.jpg";
 
@@ -56,6 +56,10 @@ const OrderDetail = () => {
       setIsPayShow(true);
     }
   };
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="banner w-full flex items-center justify-center">
@@ -293,7 +297,7 @@ const OrderDetail = () => {
             </div>
           </div>
         </div>
-        <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10">
+        <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(2)}>
           Next
         </button>
       </div>
@@ -340,10 +344,10 @@ const OrderDetail = () => {
             </div>
           </div>
           <div className="w-5/12 flex items-center justify-between mt-8">
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10">
+            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(1)}>
               Back
             </button>
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10">
+            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(3)}>
               Next
             </button>
           </div>
@@ -435,10 +439,10 @@ const OrderDetail = () => {
             </div>
           </div>
           <div className="w-5/12 flex items-center justify-between mt-8">
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10">
+            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(2)}>
               Back
             </button>
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10">
+            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(4)}>
               Next
             </button>
           </div>

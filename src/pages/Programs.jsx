@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FaqBanner from "../assets/images/faq-banner.jpg";
 import PhoenicCard from "../Components/PhoenicCard";
 import programBgDesign from "../assets/images/program-bg-design.svg";
@@ -11,6 +11,9 @@ import programImg4 from "../assets/images/program-img-4.png";
 import productSideDesign from "../assets/images/products-side-bottom-design.svg";
 
 const Programs = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="banner w-full flex items-center justify-center">

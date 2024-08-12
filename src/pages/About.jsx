@@ -3,8 +3,12 @@ import childPhoto2 from "../assets/images/Frame 121.png";
 import childPhoto3 from "../assets/images/Frame 126.png";
 
 import aboutBannerImg from "../assets/images/about-banner.svg";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div className="w-full flex flex-col items-center">
       <div className="w-full flex items-center justify-center flex-col relative">

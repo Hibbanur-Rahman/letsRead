@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FaqBanner from "../assets/images/faq-banner.jpg";
 // import FaqImg2 from "../assets/images/faq2.png";
 // import AccordionUse from "../Components/AccordianUsage";
@@ -16,6 +16,10 @@ const FAQ = () => {
   const [isFaqShow4, setIsFaqShow4] = useState(false);
   const [isFaqShow5, setIsFaqShow5] = useState(false);
   const [isFaqShow6, setIsFaqShow6] = useState(false);
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div className="w-full flex items-center justify-center flex-col">
       <div className="banner w-full flex items-center justify-center">

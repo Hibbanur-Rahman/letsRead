@@ -14,8 +14,12 @@ import phoneNumberIcon from "../assets/images/mobile-icon.svg";
 import categoryIcon from "../assets/images/category-icon.svg";
 import stateIcon from "../assets/images/state-icon.svg";
 import messageIcon from "../assets/images/message-icon.svg";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="banner relative w-full flex flex-col">

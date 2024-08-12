@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import {useNavigate} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import HeroSection from "../Components/HeroSection";
 import About from "../Components/About";
 import Programs from "../Components/Programs";
@@ -36,8 +36,11 @@ const Home = () => {
   const [isFaqShow5, setIsFaqShow5] = useState(false);
   const [isFaqShow6, setIsFaqShow6] = useState(false);
 
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full flex flex-col justify-center m-0 p-0 ">
       <HeroSection />
@@ -421,7 +424,7 @@ const Home = () => {
         className="w-full flex items-center justify-center p-16 relative mb-20"
         style={{ background: "linear-gradient(45deg, #FE2260,#981439)" }}
       >
-         <div className="absolute top-[-50px] right-[-50px] h-[150px] w-[150px]">
+        <div className="absolute top-[-50px] right-[-50px] h-[150px] w-[150px]">
           <img src={yellowStar} alt="star" className="h-full w-full" />
         </div>
         <img
@@ -438,9 +441,8 @@ const Home = () => {
           <button
             className="rounded-xl py-1 px-8 font-bold text-xl mt-8 cursor-pointer"
             style={{ background: "linear-gradient(#FFE259,#FFA751)" }}
-            onClick={()=>navigate('/contact')}
+            onClick={() => navigate("/contact")}
           >
-            
             Contact US
           </button>
         </div>

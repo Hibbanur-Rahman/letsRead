@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ResourcesImg from "../assets/images/Resources.png";
 import { NavLink } from "react-router-dom";
 import Resources2 from "../assets/images/resources2.png";
@@ -11,6 +11,10 @@ import {
 import EllipseImg from "../assets/images/Ellipse 33.png";
 
 const Resources = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div>
       <div>

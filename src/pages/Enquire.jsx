@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import EnquirePng from "../assets/images/Enquire.png";
 import{FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import{ faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
 
 const Enquire = () => {
-   
+   useEffect(()=>{
+    window.scrollTo(0, 0);
+   },[])
   return (
     <div className="flex justify-center content-center">
       <div className="w-[750px] h-[880px] bg-darkPurple absolute top-[70px]  rounded-xl ">

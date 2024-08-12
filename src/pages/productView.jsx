@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProductViewBanner from "../assets/images/product-view-banner.jpg";
 import plusIcon from "../assets/images/plus-icon.svg";
@@ -28,6 +28,10 @@ const ProductView = () => {
   const navigate=useNavigate();
   const [count, setCount] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
@@ -208,8 +212,7 @@ const ProductView = () => {
         </div>
       </div>
 
-      <div className="w-11/12 rounded-3xl mt-8 overflow-hidden">
-        <div className="bg-darkPurple w-full rounded-3xl flex justify-center rounded-b-none p-2 py-4">
+      <div className="bg-darkPurple w-11/12 rounded-full flex justify-center rounded-b-none p-2 py-4 mt-8">
           <div className="w-10/12 flex justify-between ">
             <p className="underline text-xl font-bold text-yellow cursor-pointer">
               About Product
@@ -222,6 +225,8 @@ const ProductView = () => {
             </p>
           </div>
         </div>
+      <div className="w-11/12 rounded-3xl rounded-t-none  overflow-hidden">
+        
         <div className="bg-[#FFF9D7] p-8 flex flex-col w-full">
           <h1 className="font-bold text-3xl underline">
             Introducing Learner’s Book 1:{" "}
