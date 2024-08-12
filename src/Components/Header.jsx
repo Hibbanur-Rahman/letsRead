@@ -5,9 +5,9 @@ import LetsReadImg from "../assets/images/image 2.png";
 const Header = () => {
   const location = useLocation();
   return (
-    <nav className="bg-white p-2  ">
-      <div className="flex justify-between items-center">
-        <img src={LetsReadImg} alt="img" className="w-[150px] h[40px]" />
+    <nav className="bg-white p-2  flex justify-center items-center w-full">
+      <div className="flex justify-between items-center w-full px-6">
+        <img src={LetsReadImg} alt="img" className="w-[200px] h[40px]" />
         <nav className=" flex gap-6 items-center">
           <NavLink to="/" className={`text-lg font-bold ${location.pathname==='/'?'text-pink underline':''}`}>
             Home
