@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full flex justify-center items-center flex-col">
+    <div className="w-full flex justify-center items-center flex-col relative">
       <img src={HeroPng} alt="img" className="w-full" />
 
       <div className="absolute top-[260px] left-[200px]">
@@ -36,8 +36,8 @@ const HeroSection = () => {
         </button>
       </div>
       {modal && (
-        <div className="flex justify-center content-center">
-          <div className="w-[750px] h-[880px] bg-darkPurple absolute top-[70px]  rounded-xl ">
+        <div className="flex justify-center content-center absolute rounded-lg w-full h-full bg-[#ebebeb8a]">
+          <div className="w-5/12 h-[880px] bg-white relative top-[70px]  rounded-2xl overflow-hidden shadow-2xl">
             <button className="absolute  right-2 top-1">
               <FontAwesomeIcon
                 icon={faCircleXmark}
@@ -50,8 +50,8 @@ const HeroSection = () => {
               alt="aboutimg"
               className="h-[300px] object-cover object-center overflow-hidden  "
             />
-            <div className="w-[700px] h-[100px]  bg-pink rounded-2xl absolute top-[250px] mx-6">
-              <h1 className="text-center mt-2 text-[26px] font-bold text-white">
+            <div className="w-11/12 py-4   bg-pink rounded-3xl absolute top-[250px] mx-6">
+              <h1 className="text-center  text-[26px] font-bold text-white">
                 {" "}
                 Transformative Education From The Star
               </h1>
@@ -64,35 +64,35 @@ const HeroSection = () => {
               <input
                 type="text"
                 placeholder="Saif"
-                className="w-6/12 py-2 px-4 rounded-[50px] text-white bg-purple-800"
+                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Enter Your Email:"
-                className="w-6/12 py-2 px-4 rounded-[50px] "
+                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Enter Your Mobile Number:"
-                className="w-6/12 py-2 px-4 rounded-[50px]  "
+                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Select Your State:"
-                className="w-6/12 py-2 px-4 rounded-[50px]  "
+                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Enter Your Child Name:"
-                className="w-6/12 py-2 px-4 rounded-[50px] "
+                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <textarea
                 id="message"
                 rows="4"
-                class="block p-2.5  text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-6/12"
+                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800 resize-none"
                 placeholder="Enter Your Message"
               ></textarea>
-              <button className="bg-yellow-300 w-6/12 py-2 mt-4  rounded-lg font-bold">
+              <button className="bg-pink text-white w-8/12 py-2 mt-4  rounded-2xl font-bold">
                 Enquire Now
               </button>
             </form>

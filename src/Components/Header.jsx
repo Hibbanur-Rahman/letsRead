@@ -1,30 +1,81 @@
-import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import LetsReadImg from "../assets/images/image 2.png";
+import React, { useState } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import Drawer from "@mui/material/Drawer";
 
+import LetsReadImg from "../assets/images/image 2.png";
+import { BiSolidUserDetail } from "react-icons/bi";
+import { FiPhoneCall } from "react-icons/fi";
+import { IoMenu } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
+import { HiHome } from "react-icons/hi2";
+import { BsInfoCircle } from "react-icons/bs";
+import { IoLibraryOutline } from "react-icons/io5";
+import { MdLibraryAddCheck } from "react-icons/md";
+import { HiOutlineSquaresPlus } from "react-icons/hi2";
+import { MdOutlineQuestionAnswer } from "react-icons/md";
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
   return (
-    <nav className="bg-white p-2  flex justify-center items-center w-full">
-      <div className="flex justify-between items-center w-full px-6">
-        <img src={LetsReadImg} alt="img" className="w-[200px] h[40px]" />
-        <nav className=" flex gap-6 items-center">
-          <NavLink to="/" className={`text-lg font-bold ${location.pathname==='/'?'text-pink underline':''}`}>
+    <nav className="bg-white p-2  flex justify-center items-center w-full md:relative fixed md:top-0 top-[0px] z-[100] md:shadow-none shadow-lg">
+      <div className="flex justify-between items-center w-full md:px-6 ">
+        <img
+          src={LetsReadImg}
+          alt="img"
+          className="md:w-[200px] md:h-[50px] w-[100px] h-[30px]"
+        />
+        <nav className=" md:flex hidden gap-6 items-center">
+          <NavLink
+            to="/"
+            className={`text-lg font-bold ${
+              location.pathname === "/" ? "text-pink underline" : ""
+            }`}
+          >
             Home
           </NavLink>
-          <NavLink to="/about" className={`text-lg font-bold ${location.pathname==='/about'?'text-pink underline':''}`}>
+          <NavLink
+            to="/about"
+            className={`text-lg font-bold ${
+              location.pathname === "/about" ? "text-pink underline" : ""
+            }`}
+          >
             About Us
           </NavLink>
-          <NavLink to="/products" className={`text-lg font-bold ${location.pathname==='/products'?'text-pink underline':''}`}>
+          <NavLink
+            to="/products"
+            className={`text-lg font-bold ${
+              location.pathname === "/products" ? "text-pink underline" : ""
+            }`}
+          >
             Products
           </NavLink>
-          <NavLink to="/programs" className={`text-lg font-bold ${location.pathname==='/programs'?'text-pink underline':''}`}>
+          <NavLink
+            to="/programs"
+            className={`text-lg font-bold ${
+              location.pathname === "/programs" ? "text-pink underline" : ""
+            }`}
+          >
             Programs
           </NavLink>
-          <NavLink to="/resources" className={`text-lg font-bold ${location.pathname==='/resources'?'text-pink underline':''}`}>
+          <NavLink
+            to="/resources"
+            className={`text-lg font-bold ${
+              location.pathname === "/resources" ? "text-pink underline" : ""
+            }`}
+          >
             Resources
           </NavLink>
-          <NavLink to="/faq" className={`text-lg font-bold ${location.pathname==='/faq'?'text-pink underline':''}`}>
+          <NavLink
+            to="/faq"
+            className={`text-lg font-bold ${
+              location.pathname === "/faq" ? "text-pink underline" : ""
+            }`}
+          >
             FAQ
           </NavLink>
           <button
@@ -37,6 +88,124 @@ const Header = () => {
             Enquire Now
           </button>
         </nav>
+        <div className="md:hidden flex gap-[10px]">
+          <div className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-black p-1">
+            <BiSolidUserDetail className="text-3xl  text-yellow" />
+          </div>
+          <div className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-[#7E57C2] p-1 px-2">
+            <FiPhoneCall className="text-2xl  text-white" />
+          </div>
+          <div
+            className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-pink p-1  px-2"
+            onClick={toggleDrawer(true)}
+          >
+            <IoMenu className="text-2xl  text-white" />
+          </div>
+
+          <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+            <div className="w-[290px] bg-white flex flex-col">
+              <div className="w-full flex justify-between item-center px-2 py-3 shadow-lg">
+                <img
+                  src={LetsReadImg}
+                  alt="img"
+                  className=" w-[120px] h-[40px]"
+                  onClick={() => navigate("/")}
+                />
+                <div className="flex gap-[10px] items-center">
+                  <div className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-black p-1">
+                    <BiSolidUserDetail className="text-3xl  text-yellow" />
+                  </div>
+                  <div
+                    className="flex items-center justify-center rounded-lg shadow-lg p-1"
+                    onClick={toggleDrawer(false)}
+                  >
+                    <RxCross2 className="text-4xl  text-pink" />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex flex-col px-4">
+                <div className="w-full py-3 border-b-[1px] border-[#929292]">
+                  <div
+                    className={`w-full flex items-center px-3 py-2 gap-[10px] rounded-2xl ${
+                      location.pathname === "/"
+                        ? "bg-[#7E57C2] text-white shadow-lg"
+                        : "bg-white"
+                    } `}
+                    onClick={() => navigate("/")}
+                  >
+                    <HiHome className="text-3xl" />
+                    <p className="text-xl">Home</p>
+                  </div>
+                </div>
+                <div className="w-full py-3 border-b-[1px] border-[#929292]">
+                  <div
+                    className={`w-full flex items-center px-3 py-2 gap-[10px] rounded-2xl ${
+                      location.pathname === "/about"
+                        ? "bg-[#7E57C2] text-white shadow-lg"
+                        : "bg-white"
+                    } `}
+                    onClick={() => navigate("/about")}
+                  >
+                    <BsInfoCircle className="text-3xl" />
+                    <p className="text-xl">About Us</p>
+                  </div>
+                </div>
+                <div className="w-full py-3 border-b-[1px] border-[#929292]">
+                  <div
+                    className={`w-full flex items-center px-3 py-2 gap-[10px] rounded-2xl ${
+                      location.pathname === "/products"
+                        ? "bg-[#7E57C2] text-white shadow-lg"
+                        : "bg-white"
+                    } `}
+                    onClick={() => navigate("/products")}
+                  >
+                    <IoLibraryOutline className="text-3xl" />
+                    <p className="text-xl">Products</p>
+                  </div>
+                </div>
+                <div className="w-full py-3 border-b-[1px] border-[#929292]">
+                  <div
+                    className={`w-full flex items-center px-3 py-2 gap-[10px] rounded-2xl ${
+                      location.pathname === "/programs"
+                        ? "bg-[#7E57C2] text-white shadow-lg"
+                        : "bg-white"
+                    } `}
+                    onClick={() => navigate("/programs")}
+                  >
+                    <MdLibraryAddCheck className="text-3xl" />
+                    <p className="text-xl">Programs</p>
+                  </div>
+                </div>
+                <div className="w-full py-3 border-b-[1px] border-[#929292]">
+                  <div
+                    className={`w-full flex items-center px-3 py-2 gap-[10px] rounded-2xl ${
+                      location.pathname === "/resources"
+                        ? "bg-[#7E57C2] text-white shadow-lg"
+                        : "bg-white"
+                    } `}
+                    onClick={() => navigate("/resources")}
+                  >
+                    <HiOutlineSquaresPlus className="text-3xl" />
+                    <p className="text-xl">Resources</p>
+                  </div>
+                </div>
+                <div className="w-full py-3 border-b-[1px] border-[#929292]">
+                  <div
+                    className={`w-full flex items-center px-3 py-2 gap-[10px] rounded-2xl ${
+                      location.pathname === "/faq"
+                        ? "bg-[#7E57C2] text-white shadow-lg"
+                        : "bg-white"
+                    } `}
+                    onClick={() => navigate("/faq")}
+                  >
+                    <MdOutlineQuestionAnswer className="text-3xl" />
+                    <p className="text-xl">Faq</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Drawer>
+        </div>
       </div>
     </nav>
   );
