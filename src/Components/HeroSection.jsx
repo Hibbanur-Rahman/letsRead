@@ -1,104 +1,114 @@
 import React from "react";
 import { useState } from "react";
 import HeroPng from "../assets/images/letsread.png";
+import HeroImgMobile from "../assets/images/hero-img-mobile.png";
 // import Enquire from "../pages/Enquire";
 import EnquirePng from "../assets/images/Enquire.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
-const HeroSection = () => {
-  const [modal, setModal] = useState(false);
 
-  const toggleModal = () => {
-    setModal(!modal);
+import Modal from "@mui/material/Modal";
+
+import { RxCross2 } from "react-icons/rx";
+const HeroSection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModalOpen = () => {
+    setModalOpen(!modalOpen);
   };
 
   return (
-    <div className="w-full flex justify-center items-center flex-col relative">
-      <img src={HeroPng} alt="img" className="w-full" />
+    <div className="w-full flex justify-center items-center flex-col relative md:mt-0 mt-[60px]">
+      <img src={HeroPng} alt="img" className="w-full md:flex hidden" />
+      <img src={HeroImgMobile} alt="img" className="w-full md:hidden" />
 
-      <div className="absolute top-[260px] left-[200px]">
-        <h1 className="text-white text-5xl font-bold">We Prepare To Ignite </h1>
-        <h1 className="text-white text-5xl font-bold mt-4">
+      <div className="absolute md:px-0 px-4 md:top-[260px] top-[50px] md:left-[200px]">
+        <h1 className="text-white md:text-5xl text-3xl font-bold">
+          We Prepare To Ignite{" "}
+        </h1>
+        <h1 className="text-white md:text-5xl text-3xl font-bold md:mt-4">
           The Joy of <span className="text-yellow ">Reading</span>
         </h1>
-        <p className="text-white text-lg w-7/12 mt-5">
+        <p className="text-white md:text-lg text-sm md:w-7/12 mt-5">
           Reading kits offer families with young children the tools and
           information to help inspire a. passion for reading in their homes.
         </p>
-        <p className="text-white text-2xl w-7/12 mt-5">
+        <p className="text-white md:text-2xl text-sm md:w-7/12 mt-5">
           555+ Schools &gt;&gt; 500+ Teachers &gt;&gt; 5000+ Childrens{" "}
         </p>
         <button
-          onClick={toggleModal}
+          onClick={toggleModalOpen}
           className="bg-yellow px-4 py-2 mt-4  rounded-lg font-bold"
         >
           Enquire Now
         </button>
       </div>
-      {modal && (
-        <div className="flex justify-center content-center absolute rounded-lg w-full h-full bg-[#ebebeb8a]">
-          <div className="w-5/12 h-[880px] bg-white relative top-[70px]  rounded-2xl overflow-hidden shadow-2xl">
-            <button className="absolute  right-2 top-1">
-              <FontAwesomeIcon
-                icon={faCircleXmark}
-                className="w-[30px] h-[30px] text-white bg-pink"
-                onClick={()=>setModal(!modal)}
-              />
+      <Modal
+        open={modalOpen}
+        onClose={toggleModalOpen}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <div className="flex justify-center overflow-scroll content-center absolute rounded-lg w-full h-full bg-[#ebebeb8a]">
+          <div className="md:w-5/12 w-10/12 flex flex-col items-center md:h-[880px] h-max md:pb-0 pb-4  bg-white relative top-[70px]  rounded-2xl overflow-hidden shadow-2xl">
+            <button
+              className="absolute  right-2 top-1 bg-white rounded-full shadow-xl"
+              onClick={() => setModalOpen(!modalOpen)}
+            >
+              <RxCross2 className="text-3xl text-pink font-bold" />
             </button>
             <img
               src={EnquirePng}
               alt="aboutimg"
-              className="h-[300px] object-cover object-center overflow-hidden  "
+              className="md:h-[300px] h-[150px] w-full object-cover object-center overflow-hidden  "
             />
-            <div className="w-11/12 py-4   bg-pink rounded-3xl absolute top-[250px] mx-6">
-              <h1 className="text-center  text-[26px] font-bold text-white">
+            <div className="w-11/12 py-4 md:px-0 px-3   bg-pink rounded-3xl md:absolute relative mt-[-60px] md:top-[250px] md:mx-6">
+              <h1 className="text-center  md:text-[26px] text-base font-bold text-white">
                 {" "}
                 Transformative Education From The Star
               </h1>
-              <p className="text-center text-white w-6/12 mx-auto">
+              <p className="text-center text-white md:w-6/12 w-full md:text-base text-xs mx-auto">
                 Please Complete The form below, and we will get back to you
                 within 24 hours.
               </p>
             </div>
-            <form className="flex flex-col gap-[14px] justify-center items-center mt-20">
+            <form className="w-full  md:px-0 px-3 flex flex-col gap-[14px] justify-center items-center md:mt-20 mt-4">
               <input
                 type="text"
                 placeholder="Saif"
-                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
+                className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Enter Your Email:"
-                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
+                className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Enter Your Mobile Number:"
-                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
+                className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Select Your State:"
-                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
+                className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <input
                 type="text"
                 placeholder="Enter Your Child Name:"
-                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
+                className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800"
               />
               <textarea
                 id="message"
                 rows="4"
-                className="w-8/12 py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800 resize-none"
+                className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black bg-purple-800 resize-none"
                 placeholder="Enter Your Message"
               ></textarea>
-              <button className="bg-pink text-white w-8/12 py-2 mt-4  rounded-2xl font-bold">
+              <button className="bg-pink text-white md:w-8/12 w-full py-2 mt-4  rounded-2xl font-bold">
                 Enquire Now
               </button>
             </form>
           </div>
         </div>
-      )}
+      </Modal>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
 
 import LetsReadImg from "../assets/images/image 2.png";
@@ -13,6 +13,8 @@ import { IoLibraryOutline } from "react-icons/io5";
 import { MdLibraryAddCheck } from "react-icons/md";
 import { HiOutlineSquaresPlus } from "react-icons/hi2";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
+import { FaEnvelope } from "react-icons/fa";
+
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -103,7 +105,7 @@ const Header = () => {
           </div>
 
           <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-            <div className="w-[290px] bg-white flex flex-col">
+            <div className="w-[290px] min-h-[100vh] bg-white flex flex-col relative">
               <div className="w-full flex justify-between item-center px-2 py-3 shadow-lg">
                 <img
                   src={LetsReadImg}
@@ -200,6 +202,38 @@ const Header = () => {
                   >
                     <MdOutlineQuestionAnswer className="text-3xl" />
                     <p className="text-xl">Faq</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full relative bottom-0 flex items-center justify-center">
+                <div className="custom-shape-divider-bottom-1727976807  mt-5 left-0 w-full overflow-hidden rotate-180">
+                  <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                    className="relative block  h-[120px]"
+                    style={{ width: "calc(100% + 1.3px)" }}
+                  >
+                    <path
+                      d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+                      className="shape-fill  fill-[#7E57C2]"
+                    ></path>
+                  </svg>
+                </div>
+                <div className="absolute bottom-0">
+                  <div className="flex items-center gap-[20px]">
+                    <FiPhoneCall className="text-white text-2xl" />
+                    <Link className="text-white text-lg">
+                      Phone: +918520824374
+                    </Link>
+                  </div>
+                  <div className="flex items-center gap-[20px] my-1">
+                    <FaEnvelope className="text-white text-2xl" />
+                    <Link className="text-white text-lg">
+                      sales@letsreadindia.in
+                    </Link>
                   </div>
                 </div>
               </div>
